@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* grid-template-rows: 150px 490px; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header styling */
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 1rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.search form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search form #search {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.pf {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pf {
+    font-size: 1.6rem;
+}
+
+.pf p {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.greet {
+    width: 50%;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greet img {
+    grid-row: 1 / -1;
+}
+
+.greet p {
+   margin-left: 1rem;
+   font-size: 1.3rem;
+}
+
+.greet p:last-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 3rem;
+}
+
+.search button{
+    border: none;
+    background-color: transparent;
+}
+
+.menu button{
+    padding: 1rem 3rem;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.menu button:hover {
+    color: orangered;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+/* Dashboard styling */
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.dashboard {
+    background-color: seagreen;
+    color: white;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.settings, nav {
+    width: 50%;
+}
+
+.dashboard #dashboard {
+    font-size: 3rem;
+}
+
+.dashboard nav {
+    margin: 4rem 0;
+}
+
+.dashboard ul li {
+    line-height: 2;
+}
+
+.svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.sidebar {
+    color: white;
+}
+
+/* 
+Main content styling 
+*/
+
+main {
+    background-color: lightseagreen;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+}
+
+.projects {
+    grid-row: 2 / -1;
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* padding: 1rem; */
+}
+
+.projects, .users {
+    padding-bottom: 2vh;
+}
+#projects {
+    grid-column: 1 / 2;
+}
+#projects, #announcements, #trending {
+    display: flex;
+    align-items: end;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    color: antiquewhite;
+}
+.card {
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border-left: 10px solid gold;
+    padding: 1rem;
+    margin: 1rem;
+    width: 40%;
+    height: 30%;
+    font-size: 1.6rem;
+}
+
+.card p:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.announcements, .trending {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: start;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    /* background-color: yellow; */
+}
+
+.display {
+    background-color: antiquewhite;
+    /* margin: 2rem 0; */
+    padding: 1rem;
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 5px 5px 5px lightslategray;
+}
+
+.announcement, .solid {
+    margin-bottom: 1rem;
+}
+
+#announcements {
+    grid-column: 2 / 3;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.subject {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.trending {
+    grid-column: -1 / -2;
+    display: flex;
+}
+
+.user {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.users {
+    font-size: 1.6rem;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user p {
+    display: inline;
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+}

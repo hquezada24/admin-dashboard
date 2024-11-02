@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <form action="">
+                    <button type="submit" value="search"><img src="svg/magnify.svg" class="svg"></button>
+                    <input id="search" type="text">
+                </form>
+            </div>
+            <div class="pf">
+                <img src="img/squid.jpg" class="pfp">
+                <p>Calamardo Tentaculos</p>
+            </div>
+            <div class="greet">
+                <img src="img/squid.jpg" class="pfp">
+                <p>Hi there,</p><p>Calamardo @calamardo</p>
+            </div>
+            <div class="menu">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div id="logo"><img class="logo" src="svg/view-dashboard.svg"><p id="dashboard">Dashboard</p></div>
+            <nav>
+                <ul>
+                    <li><img class="svg" src="home.svg"><a href="" class="sidebar">Home</a></li>
+                    <li><img class="svg" src="svg/account.svg"><a href="" class="sidebar">Profile</a></li>
+                    <li><img class="svg" src="svg/message.svg"><a href="" class="sidebar">Messages</a></li>
+                    <li><img class="svg" src="svg/history.svg"><a href="" class="sidebar">History</a></li>
+                    <li><img class="svg" src="svg/calendar-check.svg"><a href="" class="sidebar">Task</a></li>
+                </ul>
+            </nav>
+            <div class="settings">
+                <ul>
+                    <li><img class="svg" src="svg/cog.svg"><a href="" class="sidebar">Settings</a></li>
+                    <li><img class="svg" src="svg/face-agent.svg"><a href="" class="sidebar">Support</a></li>
+                    <li><img class="svg" src="svg/shield-check.svg"><a href="" class="sidebar">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <main class="content">
+            <p id="projects">Projects</p>
+            <p id="announcements">Announcements</p>
+            <div class="projects">
+                <div class="card">
+                    <p class="subject">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                </div>
+                <div class="card">
+                    <p class="subject">Less Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                </div>
+                <div class="card">
+                    <p class="subject">App</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                </div>
+                <div class="card">
+                    <p class="subject">Website</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                </div>
+                <div class="card">
+                    <p class="subject">Game</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                </div>
+                <div class="card">
+                    <p class="subject">Other</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                </div>
+            </div>
+            <div class="announcements">
+                <div class="display">
+                    <div class="announcement">
+                        <p class="subject">Site Maintenance</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                    </div>
+                    <hr class="solid">
+                    <div class="announcement">
+                        <p class="subject">Community Share Day</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                    </div>
+                    <hr class="solid">
+                    <div class="announcement">
+                        <p class="subject">Updated Privary Policy</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac arcu purus.</p>
+                    </div>
+                </div>
+            </div>
+            <p id="trending">Trending</p>
+            <div class="trending">
+                <div class="display users">
+                    <div class="user"><img src="img/Sirenoman.jpg" class="pfp"><p><a href="">@sirenoman</a></p></div>
+                    <div class="user"><img src="img/Ludovico_joven.jpg" class="pfp"><p><a href="">@ludovico_p.luche</a></p></div>
+                    <div class="user"><img src="img/danna.jpg" class="pfp"><p><a href="">@danna</a></p></div>
+                    <div class="user"><img src="img/epn.jpg" class="pfp"><p><a href="">@epn</a></p></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
